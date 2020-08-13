@@ -1,6 +1,6 @@
 Light[] letters = new Light[26];
-String letterOrder =          "QWERTYUIOPASDFGHJKLZXCVBNM";
-String letterOrderLowerCase = "qwertyuiopasdfghjklzxcvbnm";
+String letterOrder =          "QWERTZUIOPASDFGHJKLYXCVBNM";
+String letterOrderLowerCase = "qwertzuiopasdfghjklyxcvbnm";
 PImage lightOnSprite;
 boolean keyIsDown = false;
 char keyDown;
@@ -27,7 +27,7 @@ void setup() {
 void draw() {
   background(0);
   imageMode(CORNER);
-  image(blackground,0,0, width,height);
+  //image(blackground,0,0, width,height);
   enigma.show();
 }
 

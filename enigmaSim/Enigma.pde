@@ -32,7 +32,7 @@ class Enigma {
 
   char runMachine(char inputChar) {
     if (rotor1.rotorNo == rotor2.rotorNo || rotor3.rotorNo == rotor2.rotorNo  || rotor1.rotorNo == rotor3.rotorNo ) {
-      println("Error rotors cannot have the same number"); 
+      println("Fehler: Rotoren können nicht die gleiche Zahl haben!"); 
       return '1';
     }
     int inputNo = letterOrderLowerCase.indexOf(inputChar); 
@@ -89,7 +89,7 @@ class Enigma {
       rotor3.show();
       if (rotor1.rotorNo == rotor2.rotorNo || rotor3.rotorNo == rotor2.rotorNo  || rotor1.rotorNo == rotor3.rotorNo ) {
         fill(255,0,0);
-        text("Cannot use the same rotor twice", width/2,50);
+        text("Ein Rotor kann nicht merfach verwendet werden!", width/2,50);
       }
     } else {
       plugBoard.show();
