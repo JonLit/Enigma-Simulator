@@ -27,7 +27,7 @@ void setup() {
 void draw() {
   background(0);
   imageMode(CORNER);
-  //image(blackground,0,0, width,height);
+  image(blackground,0,0, width,height);
   enigma.show();
 }
 
